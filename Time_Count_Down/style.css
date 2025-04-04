@@ -1,0 +1,97 @@
+/*universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+/*container*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0  8%;
+    position: relative;
+}
+
+/*logo*/
+.logo{
+    width: 170px;
+    padding: 20px 0px;
+    cursor: pointer;
+    margin-left:20;
+    
+
+}
+
+/*content*/
+.content{
+    top:50%;
+    position: absolute;
+    transform: translatey(-50%);
+    color:#fff;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #ff3753;
+}
+
+.content button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img{
+    width:15px;
+    margin-left: 10px;
+}
+
+/*launch time*/
+.Launch-time{
+    display: flex;
+
+}
+
+.Launch-time div{
+    flex-basis: 100px;
+}
+
+.Launch-time div p{
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+
+/*Rocket*/
+.Rocket{
+    width: 300px;
+    position: absolute;
+    right:15%;
+    bottom: 0;
+    animation:Rocket  4s linear infinite;
+}
+
+@keyframes Rocket{
+    0%{
+        bottom:0;
+        opacity:0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
